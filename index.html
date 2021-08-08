@@ -10,16 +10,19 @@
 	<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
 	</head>
 	<body>
-	<input
-          v-model="activityParam.basePrice"
-          type="number"
-          placeholder="歌单id">
-	watch:{
-	'activityParam.basePrice':function(newValue){
-    	activityParam.basePrice = newValue >= 1 ? newValue : '';
-    }
-}
-	<meting-js server="kugou" type="playlist" id=v-model></meting-js>
-		
+
+<meting-js 
+	server="kugou" 
+	type="search" 
+	id=""
+	fixed="false" 
+	autoplay="true"
+	loop="all"
+	order="random"
+	preload="auto"
+	list-folded="ture"
+	list-max-height="1000px"
+	lrc-type="1">
+</meting-js>
 	</body>
 </html>
