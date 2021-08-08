@@ -10,19 +10,22 @@
 	<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
 	</head>
 	<body>
-
-<meting-js 
-	server="kugou" 
-	type="playlist" 
-	id="114514"
-	fixed="false" 
-	autoplay="true"
-	loop="all"
-	order="random"
-	preload="auto"
-	list-folded="ture"
-	list-max-height="1000px"
-	lrc-type="1">
-</meting-js>
+		<meting-js 
+		server="kugou" 
+		type="playlist" 
+		id="114514"
+		fixed="false" 
+		autoplay="true"
+		loop="all"
+		order="random"
+		preload="auto"
+		list-folded="ture"
+		list-max-height="1000px"
+		lrc-type="1">
+		</meting-js>
+		<script>
+		var meting_api='http://example.com/api.php?server=:server&type=:type&id=:id&auth=:auth&r=:r';
+		</script>
+<script src="dist/Meting.min.js"></script>
 	</body>
 </html>
